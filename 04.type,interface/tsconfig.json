@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    // js 파일 자동 생성 및 es6로
+    "rootDir": "./src",
+    "outDir": "./build/js",
+    "target": "ES2015",
+    "noEmitOnError": false, // ts에러나면 생성 안됨(true)
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "strict": true
+  },
+  // 정해진 경로 외에 ts생성 시 js 자동 생성 방지
+  "include": ["./src/**/*.ts"]
+}
